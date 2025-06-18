@@ -8,7 +8,7 @@ const Home = () => {
     {
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
         </svg>
       ),
       title: 'Tooth Extraction',
@@ -113,8 +113,8 @@ const Home = () => {
           <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99z"/>
         </svg>
       ),
-      title: "Pickup/Drop Service",
-      description: "Convenient transportation assistance"
+      title: "Modern Equipment",
+      description: "State-of-the-art dental technology"
     }
   ];
 
@@ -160,20 +160,20 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red-600 via-red-700 to-red-800 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.pexels.com/photos/3845683/pexels-photo-3845683.jpeg" 
-            alt="Professional dental care"
-            className="w-full h-full object-cover opacity-20"
+            src="https://i.imgur.com/0LxZXlF.jpg" 
+            alt="Sakthi Dental Clinic Interior"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-purple-800/70 to-purple-900/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-red-900/80 via-red-800/70 to-red-900/80"></div>
         </div>
 
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse-slow"></div>
-        <div className="absolute bottom-40 right-20 w-32 h-32 bg-lavender-300/20 rounded-full blur-2xl animate-bounce-gentle"></div>
+        <div className="absolute bottom-40 right-20 w-32 h-32 bg-blue-300/20 rounded-full blur-2xl animate-bounce-gentle"></div>
         <div className="absolute top-1/3 right-10 w-16 h-16 bg-white/5 rounded-full blur-lg animate-pulse-slow"></div>
 
         {/* Content */}
@@ -181,23 +181,23 @@ const Home = () => {
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Specialized Dental Care for{" "}
-              <span className="bg-gradient-to-r from-lavender-200 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
                 Women, Children & Families
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
               Experience gentle, professional dental care in a warm, welcoming environment designed for your family's comfort and health.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link
                 to="/contact"
-                className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-2xl min-w-[200px]"
+                className="bg-white text-red-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-2xl min-w-[200px]"
               >
                 Fix an Appointment
               </Link>
               <a
                 href="tel:+919876543210"
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-all duration-300 hover:scale-105 min-w-[200px]"
+                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-600 transition-all duration-300 hover:scale-105 min-w-[200px]"
               >
                 Emergency Dental Support
               </a>
@@ -214,13 +214,13 @@ const Home = () => {
       </section>
 
       {/* Welcome Banner */}
-      <section className="py-16 bg-gradient-to-r from-lavender-50 to-purple-50">
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-red-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-soft-lg border border-purple-100">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-soft-lg border border-red-100">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               You are always in safe hands
             </h2>
-            <p className="text-xl text-purple-700 font-medium">
+            <p className="text-xl text-red-700 font-medium">
               We are ready to help, anytime.
             </p>
           </div>
@@ -232,7 +232,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose <span className="text-purple-600">Sakthi Dental?</span>
+              Why Choose <span className="text-red-600">Sakthi Dental?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We combine expertise, compassion, and cutting-edge technology to deliver exceptional dental care for women, children, and families.
@@ -243,9 +243,9 @@ const Home = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white to-purple-50 p-8 rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-2 border border-purple-100"
+                className="group bg-gradient-to-br from-white to-red-50 p-8 rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-2 border border-red-100"
               >
-                <div className="text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -261,11 +261,11 @@ const Home = () => {
       </section>
 
       {/* Core Services */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 via-lavender-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-red-50 via-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-purple-600">Core Services</span>
+              Our <span className="text-red-600">Core Services</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive dental care services designed to keep your family's smiles healthy and beautiful.
@@ -276,9 +276,9 @@ const Home = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-2 border border-purple-100"
+                className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-2 border border-red-100"
               >
-                <div className="text-purple-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-red-600 mb-6 group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -289,7 +289,7 @@ const Home = () => {
                 </p>
                 <Link
                   to="/treatments"
-                  className="text-purple-600 font-semibold hover:text-purple-700 transition-colors flex items-center group-hover:translate-x-2 transition-transform duration-300"
+                  className="text-red-600 font-semibold hover:text-red-700 transition-colors flex items-center group-hover:translate-x-2 transition-transform duration-300"
                 >
                   Learn More
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -303,7 +303,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link
               to="/treatments"
-              className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-red-700 hover:to-red-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View All Services
             </Link>
@@ -311,12 +311,83 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Clinic Facilities Showcase */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              What Our <span className="text-purple-600">Patients Say</span>
+              Our Modern <span className="text-red-600">Clinic</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              State-of-the-art facilities designed for your comfort and the highest quality of care.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Clinic Images */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <img 
+                  src="https://i.imgur.com/8Kx4g2S.jpg" 
+                  alt="Modern Dental Chair and Equipment"
+                  className="w-full h-48 object-cover rounded-xl shadow-soft"
+                />
+                <img 
+                  src="https://i.imgur.com/KvM9rQ3.jpg" 
+                  alt="Clean Waiting Area"
+                  className="w-full h-48 object-cover rounded-xl shadow-soft"
+                />
+              </div>
+              <div className="space-y-4 pt-8">
+                <img 
+                  src="https://i.imgur.com/L2N5x8T.jpg" 
+                  alt="Professional Dental Office"
+                  className="w-full h-48 object-cover rounded-xl shadow-soft"
+                />
+                <img 
+                  src="https://i.imgur.com/9QzK8F3.jpg" 
+                  alt="Advanced Dental Technology"
+                  className="w-full h-48 object-cover rounded-xl shadow-soft"
+                />
+              </div>
+            </div>
+
+            {/* Facility Features */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">
+                World-Class Facilities
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {facilities.map((facility, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start space-x-4 p-4 bg-gradient-to-r from-red-50 to-blue-50 rounded-xl border border-red-100"
+                  >
+                    <div className="text-red-600 flex-shrink-0">
+                      {facility.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-1">
+                        {facility.title}
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        {facility.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-gradient-to-br from-red-50 via-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              What Our <span className="text-red-600">Patients Say</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Read about the experiences of families who trust us with their dental care.
@@ -324,7 +395,7 @@ const Home = () => {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-purple-50 to-lavender-50 rounded-3xl p-8 md:p-12 shadow-soft-lg border border-purple-100">
+            <div className="bg-gradient-to-br from-red-50 to-blue-50 rounded-3xl p-8 md:p-12 shadow-soft-lg border border-red-100">
               <div className="text-center">
                 <div className="flex justify-center mb-6">
                   {[...Array(5)].map((_, i) => (
@@ -336,7 +407,7 @@ const Home = () => {
                 <blockquote className="text-xl md:text-2xl text-gray-700 mb-8 italic leading-relaxed">
                   "{testimonials[currentTestimonial].text}"
                 </blockquote>
-                <div className="text-lg font-semibold text-purple-600">
+                <div className="text-lg font-semibold text-red-600">
                   — {testimonials[currentTestimonial].name}
                 </div>
               </div>
@@ -350,45 +421,12 @@ const Home = () => {
                   onClick={() => setCurrentTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === currentTestimonial
-                      ? 'bg-purple-600 scale-125'
-                      : 'bg-purple-200 hover:bg-purple-300'
+                      ? 'bg-red-600 scale-125'
+                      : 'bg-red-200 hover:bg-red-300'
                   }`}
                 />
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Clinic Facilities */}
-      <section className="py-20 bg-gradient-to-br from-purple-50 via-lavender-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Clinic <span className="text-purple-600">Facilities</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Modern amenities and conveniences designed for your comfort and accessibility.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {facilities.map((facility, index) => (
-              <div
-                key={index}
-                className="group bg-white p-8 rounded-2xl shadow-soft hover:shadow-soft-lg transition-all duration-300 hover:-translate-y-2 border border-purple-100 text-center"
-              >
-                <div className="text-purple-600 mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">
-                  {facility.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  {facility.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {facility.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
